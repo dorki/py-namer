@@ -4,7 +4,7 @@ using [astpp](http://alexleone.blogspot.co.uk/2010/01/python-ast-pretty-printer.
 
 
 ## usage: 
-python pynamer.py project-folder  
+    python pynamer.py project-folder  
 result: new folder named X0000...0001 with project content.
 
 
