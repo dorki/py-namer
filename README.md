@@ -3,7 +3,8 @@ python camouflager, rename all your project's names (variables, function, module
 using [astpp](http://alexleone.blogspot.co.uk/2010/01/python-ast-pretty-printer.html) as pp.py (thanks to Alex Leone)
 
 ## Motivation
-Python is interpreter language. As such, it is really hard to compile it, and obfuscate code logic. Yet, sometimes there is a such need.   
+Python is interpreter language. As such, it is really hard to compile it, and obfuscate code logic. Yet, sometimes there is a such need.  
+  
 Using Cython(http://cython.org) project will compile it to C code, But since in python everything is an Object, even function's local variables have thier name in a string somewhere and therefore it's very easy to de-compile or at least understand the basic of the code logic by taking a look at the compiled code strings.  
   
 This is where py-namer comes handy, it will rename everything in a given project folder: files, import statments, classes, functions and variables. 
