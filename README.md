@@ -9,7 +9,9 @@ This is where py-namer comes handy, it will rename everything in a given project
 
 ## How its work
 The main chalange here is to distinguish between object beloning the the current project being renamed and other objects that has been imported to the project from python library or other 3rd party modules.  
-So for example if i have a class named 'myclass' with function called '__str__' i still want '__str__' to be renamed but only if a variable is from type 'myclass' and not all other object that probably also have function called '__str__'  
+  
+So for example if the project contains a class named 'myclass' with function called '\_\_str__' this function should be renamed but only if been used as attribute with variable typed as 'myclass' and not all other object that probably also have function called '\_\_str__'  
+  
 py-namer evaulate the Abstract Syntax Tree top to bottom with 4 main stages:
 
 ###### stage1: public names tree
